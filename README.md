@@ -1,1 +1,1 @@
-# javaexercicios
+Atividades em Java.
