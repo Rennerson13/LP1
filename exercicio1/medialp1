@@ -5,11 +5,10 @@ public class MediaLP1 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
- 
     System.out.print("Digite o nome do aluno: ");
     String nomeAluno = scanner.nextLine();
 
-    System.out.print("Digite o número de notas: ");
+    System.out.print("Digite o numero de notas: ");
     int numeroNotas = scanner.nextInt();
 
     int[] notas = new int[numeroNotas];
@@ -27,7 +26,6 @@ public class MediaLP1 {
     float media = (float) somaNotas / numeroNotas;
 
     System.out.println("**Aluno:** " + nomeAluno);
-    System.out.println("**Média de LP1:** " + media);
+    System.out.println("**Media de LP1:** " + media);
   }
-}
 }
