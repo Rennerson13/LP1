@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class MediaLP1 {
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+ 
+    System.out.print("Digite o nome do aluno: ");
+    String nomeAluno = scanner.nextLine();
+
+    System.out.print("Digite o número de notas: ");
+    int numeroNotas = scanner.nextInt();
+
+    int[] notas = new int[numeroNotas];
+
+    for (int i = 0; i < numeroNotas; i++) {
+      System.out.print("Digite a nota " + (i + 1) + ": ");
+      notas[i] = scanner.nextInt();
+    }
+
+    int somaNotas = 0;
+    for (int nota : notas) {
+      somaNotas += nota;
+    }
+
+    float media = (float) somaNotas / numeroNotas;
+
+    System.out.println("**Aluno:** " + nomeAluno);
+    System.out.println("**Média de LP1:** " + media);
+  }
+}
+}
