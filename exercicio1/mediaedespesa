@@ -1,0 +1,15 @@
+public class DespesaTrimestral {
+
+  public static void main(String[] args) {
+  
+    int janeiro = 15000;
+    int fevereiro = 23000;
+    int marco = 17000;
+
+    int totalGasto = janeiro + fevereiro + marco;
+
+    int mediaMensal = totalGasto / 3;
+
+    System.out.println("**Despesa Total no Trimestre:** R$" + totalGasto);
+    System.out.println("**Media Mensal de Gastos:** R$" + mediaMensal);
+  }
