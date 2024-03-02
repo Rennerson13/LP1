@@ -1,1 +1,24 @@
+import java.util.Scanner;
 
+public class IdadeEmDias{
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Qual sua idade?");
+        int anos = scanner.nextInt();
+
+        System.out.println("qual mes vc nasceu?");
+        int meses = scanner.nextInt();
+
+        System.out.println("Dia do mes que voce nasceu?");
+        int dias = scanner.nextInt();
+
+        int resultado = (anos * 365) + (meses * 30) + dias;
+
+        System.out.println("Nuh! voce ja viveu "+resultado+" DIAS!");
+
+
+    }
+
+}
